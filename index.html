@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maison Chic - Fashion Store</title>
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .navbar {
+            background: #000;
+        }
+
+        .navbar a {
+            color: #fff !important;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .fashion-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: .4s;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        .fashion-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+        }
+
+        .image-box {
+            height: 240px;
+            background: #f6f6f6;
+            overflow: hidden;
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .card-caption {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .add-btn {
+            width: 100%;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 25px;
+        }
+
+        .footer {
+            background: #111;
+            color: #aaa;
+            padding: 50px 0;
+        }
+
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand text-white">SAPPHIRE</a>
+
+            <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link">Home</a></li>
+                    <li class="nav-item"><a class="nav-link">Collections</a></li>
+                    <li class="nav-item"><a class="nav-link">About</a></li>
+                    <li class="nav-item"><a class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div>
+            <h1>Discover Elegance</h1>
+            <p>New Collection 2026 – Timeless Fashion</p>
+            <button class="btn btn-warning">Explore Collection</button>
+        </div>
+    </section>
+
+    <!-- Products -->
+    <div class="container mt-5">
+
+        <h2 class="text-center mb-4">Our New Products</h2>
+
+        <div class="row">
+
+            <!-- Sidebar Filters -->
+            <div class="col-lg-3">
+
+                <div class="bg-light p-3 rounded">
+
+                    <h5>Gender</h5>
+                    <div class="form-check"><input class="form-check-input" type="radio"> Men</div>
+                    <div class="form-check"><input class="form-check-input" type="radio"> Women</div>
+                    <div class="form-check"><input class="form-check-input" type="radio"> Unisex</div>
+
+                    <h5 class="mt-4">Type</h5>
+                    <div class="form-check"><input class="form-check-input" type="radio"> Two Piece Suit</div>
+                    <div class="form-check"><input class="form-check-input" type="radio"> Bags</div>
+
+                    <button class="btn btn-dark w-100 mt-3">Apply Filters</button>
+
+                </div>
+
+            </div>
+
+            <!-- Product Cards -->
+            <div class="col-lg-9">
+
+                <div class="row g-4">
+
+                    <!-- Product -->
+                    <div class="col-md-4">
+
+                        <div class="fashion-card">
+
+                            <div class="image-box">
+                                <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38">
+                            </div>
+
+                            <div class="card-caption">
+                                <h6 class="text-secondary">ZARA</h6>
+                                <p>Classic Shirt</p>
+                                <h5>$45.00</h5>
+
+                                <button class="add-btn">Add to Cart</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Duplicate product cards for demo -->
+                    <div class="col-md-4">
+                        <div class="fashion-card">
+                            <div class="image-box">
+                                <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c">
+                            </div>
+                            <div class="card-caption">
+                                <h6 class="text-secondary">GUCCI</h6>
+                                <p>Luxury Bag</p>
+                                <h5>$120.00</h5>
+                                <button class="add-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="fashion-card">
+                            <div class="image-box">
+                                <img src="https://images.unsplash.com/photo-1542068829-1115f7259450">
+                            </div>
+                            <div class="card-caption">
+                                <h6 class="text-secondary">NIKE</h6>
+                                <p>Street Style</p>
+                                <h5>$80.00</h5>
+                                <button class="add-btn">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p>© 2026 Maison Chic - All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
